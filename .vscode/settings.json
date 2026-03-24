@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "02_20240930": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "16_09:2025.C": "cpp",
+        "time.h": "c"
     }
 }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>RECUPERO VERIFICA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: #07148a;
+        }
+        #somma{
+            width: 200px;
+                height: 160px;
+                background-color: rgb(8, 212, 35);
+                text-align: center;
+                line-height: 40px;
+                font-size: 24px;
+                margin: 100px auto;
+                border-radius:20px;
+                /*padding:50px;*/
+        }
+        #risultato{
+            margin-top: 20px;
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+            width:200px;
+            background-color: grey;
+        }
+        h1{
+            text-align: center;
+        }
+        #contenitore{
+            width: 200px;
+            margin: auto;
+            padding: 150px;
+            border: 2px solid black;
+            border-radius: 30px;
+            background-color: #e2d5d5;
+            position: center;
+        }
+        h2{
+            text-align: center;
+            color: #000000;
+        }
+    </style>
+</head>
+    <body>
+        <h1>VERIFICA HTML/CSS/JS</h1>
+        <div id="contenitore">
+            <h2>Calcolatrice</h2>
+            <div id="somma">
+            <input type="number" id="num1" placeholder="0">
+            <input type="number" id="num2" placeholder="0">
+            <br>
+                <button onclick="calcolaSomma()">Calcola Somma</button>
+                <button onclick="controllaPariDispari()">Controlla Pari/Dispari</button>
+                <div id="risultato">Risultato</div>
+            </div>
+        </div>
+            
+    </body>
+        <script>
+           let somma=0;
+
+            function calcolaSomma(){
+                let num;
+                let num2;
+                num=Number(document.getElementById("num1").value);
+                num2=Number(document.getElementById("num2").value);
+                somma=num+num2;
+                document.getElementById("risultato").innerHTML="la somma è: "+somma;
+            }
+
+            function controllaPariDispari(){
+                let div=document.getElementById("risultato");
+
+                if(somma%2===0){
+                    alert("il risultato è pari");
+                    div.style.backgroundColor=" rgb(10, 143, 32)";
+                    
+                }else{
+                    alert("il risultato è dispari");
+                    div.style.backgroundColor="red";
+                        
+                }
+                
+            }
+
+        </script>
+</html>

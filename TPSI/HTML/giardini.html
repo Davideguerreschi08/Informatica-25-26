@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Garden</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("immagini/margherita.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    #header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border: 2px solid black;
+    }
+
+    #header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    #header h2 {
+      margin: 5px 0 0 0;
+      font-size: 18px;
+      font-weight: normal;
+    }
+
+    #footer {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      border: 2px solid black;
+    }
+
+    #menu {
+      width: 150px;
+      background-color: #ffffffd0;
+      padding: 20px;
+      float: left;
+      height: auto; /* ora altezza automatica */
+      max-height: 400px; /* massimo 400px, regola a piacere */
+      box-sizing: border-box;
+      border: 2px solid black;
+      margin-top: 20px;
+      margin-left: 10px;
+      overflow-y: auto; /* scroll se troppo lungo */
+    }
+
+    #menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #menu li {
+      margin: 15px 0;
+      color: #a94442;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #contenuto {
+      margin-left: 180px;
+      padding: 30px;
+      background-color: #ffffffcc;
+      max-width: 700px; /* più stretto */
+      border: 2px solid black;
+      margin-top: 20px;
+      height: auto;
+      box-sizing: border-box;
+    }
+
+    #contenuto h2 {
+      color: #4CAF50;
+    }
+
+    #contenuto p {
+      color: #333;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="header">
+    <h1>Garden</h1>
+    <h2>Arredi giardino</h2>
+  </div>
+
+  <div id="menu">
+    <ul>
+      <li>Home</li>
+      <li>Mobili</li>
+      <li>Strutture</li>
+      <li>Grigliati</li>
+      <li>Fioriere</li>
+    </ul>
+  </div>
+
+  <div id="contenuto">
+    <h2>Legno e giardino</h2>
+    <p>
+      Novità dal mondo del legno, consigli utili per la manutenzione e altro ancora.<br>
+      Nuovo design per panche e fioriere.
+    </p>
+
+    <h2>Progettazione del frangivento</h2>
+    <p>
+      Trasforma il frangivento in una vera e propria parete multifunzionale<br>
+      che può essere composta alla base delle tue esigenze.<br>
+      L'obiettivo è creare una soluzione resistente e pratica.
+    </p>
+  </div>
+
+  <div id="footer">
+    Scrivi per informazioni
+  </div>
+
+</body>
+</html>
