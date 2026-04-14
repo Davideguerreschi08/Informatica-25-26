@@ -16,15 +16,15 @@ void bubbleSortChar(char nomeFile[] ){
                
     if(filep==NULL){
         printf("\nerrore apertura file");
-         return ; 
+         return; 
     }          
                
-    while(fscanf(filep, "%d", v[n])==1){//==1 è un flag e riporta 1 se trova qualcosa
+    while(fscanf(filep, "%d", &v[n])==1){//==1 è un flag e riporta 1 se trova qualcosa
         printf("elemento %d: %d", n+1, v[n]);
         n++;   
     }          
     fclose(filep);
-    n=i+1;//rappresenta la dimensione dell'array
+    //n=i+1;//rappresenta la dimensione dell'array
     for(i=0; i<n-1; i++){
         for(int j=i+1; j<n; j++){
             if(v[i]<v[j]){
@@ -37,11 +37,11 @@ void bubbleSortChar(char nomeFile[] ){
     }
           fopen(nomeFile, "w");  
           if(filep==NULL){
-             printf("\nerrore apertura file");
+             printf("\nerorre apertura file");
              return;
           }
           for(int i=0; i<n; i++){
-            fprintf(filep, "%d", v[i]);
+            fprintf(filep, "%d ", v[i]);
           }
           fclose(filep);
 }              
